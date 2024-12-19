@@ -4,21 +4,21 @@
         <CheckEolTargetFramework>false</CheckEolTargetFramework>
         <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>2.17.1</Version>
+        <Version>2.17.5</Version>
         <Title>WebDriverManager.Net</Title>
         <Description>Automatic Selenium WebDriver binaries management for .Net</Description>
-        <Copyright>© 2016-2022, Aliaksandr Rasolka. All Rights Reserved.</Copyright>
+        <Copyright>© 2016-2024, Aliaksandr Rasolka. All Rights Reserved.</Copyright>
         <PackageProjectUrl>https://github.com/rosolko/WebDriverManager.Net</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/rosolko/WebDriverManager.Net</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>Selenium WebDriver ChromeDriver EdgeDriver InternetExplorerDriver FirefoxDriver OperaDriver PhantomJsDriver</PackageTags>
-        <PackageReleaseNotes> Added support for chrome for testing apis</PackageReleaseNotes>
+        <PackageReleaseNotes>Fix edge driver download for linux and macos systems</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AngleSharp" Version="1.1.0" />
+        <PackageReference Include="AngleSharp" Version="1.1.2" />
         <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="SharpZipLib" Version="1.4.2" />
