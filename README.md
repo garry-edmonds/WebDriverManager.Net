@@ -1,5 +1,5 @@
 > **Info**  
-> Built-in manager was released by Selenium ["Selenium Manager"](https://www.selenium.dev/documentation/selenium_manager/), which will automatically download the most suitable version and platform WebDriver executable file. So now, **you can run applications that use Selenium and manipulates web browsers without this package.**
+> Built-in manager was released by Selenium ["Selenium Manager"](https://www.selenium.dev/blog/2022/introducing-selenium-manager/), which will automatically download the most suitable version and platform WebDriver executable file. So now, **you can run applications that use Selenium and manipulates web browsers without this package.**
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kjpqb5twmpxw6lpl?svg=true)](https://ci.appveyor.com/project/rosolko/webdrivermanager-net)
 [![NuGet](https://img.shields.io/nuget/v/WebDriverManager.svg)](https://www.nuget.org/packages/WebDriverManager)
@@ -118,7 +118,8 @@ Or you can specify to automatically download a driver matching the version of th
 ```csharp
 new DriverManager().SetUpDriver(
     "https://chromedriver.storage.googleapis.com/2.25/chromedriver_win32.zip",
-    Path.Combine(Directory.GetCurrentDirectory(), "chromedriver.exe")
+    Path.Combine(Directory.GetCurrentDirectory(), "chromedriver.exe"),
+    "chromedriver.exe"
 );
 ```
 
@@ -226,11 +227,13 @@ This does not require any changes in the setup of DriverManager in C#.
 ## Thanks
 Thanks to the following companies for generously providing their services/products to help improve this project:
 
-- [AppVeyor](https://appveyor.com) is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub on a Microsoft Windows virtual machine. |
-- [BrowserStack](https://www.browserstack.com) is a cloud-based cross-browser testing tool that enables developers to test their websites across various browsers on different operating systems and mobile devices, without requiring users to install virtual machines, devices or emulators. |
-- [GitHub](https://github.com) is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding several collaboration features such as bug tracking, feature requests, task management, and wikis for every project. |
-- [JetBrains](https://www.jetbrains.com)  (formerly IntelliJ) is a software development company whose tools are targeted towards software developers and project managers. |
-- [SonarQube](https://www.sonarqube.org) (formerly Sonar) is an open source platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells and security vulnerabilities on 20+ programming languages. |
+| Logo                                                                                                                     | Description                                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![AppVeyor](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/appveyor.svg)                                           | [AppVeyor](https://appveyor.com) is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub on a Microsoft Windows virtual machine.                                                                                                                                         |
+| ![BrowserStack](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/browserstack.svg)                                   | [BrowserStack](https://www.browserstack.com) is a cloud-based cross-browser testing tool that enables developers to test their websites across various browsers on different operating systems and mobile devices, without requiring users to install virtual machines, devices or emulators.                             |
+| ![GitHub](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/github-icon.svg)                                          | [GitHub](https://github.com) is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding several collaboration features such as bug tracking, feature requests, task management, and wikis for every project. |
+| ![JetBrains](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/jetbrains.svg)                                         | [JetBrains](https://www.jetbrains.com)  (formerly IntelliJ) is a software development company whose tools are targeted towards software developers and project managers.                                                                                                                                                  |
+| ![SonarQube](https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg) | [SonarQube](https://www.sonarqube.org) (formerly Sonar) is an open source platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells and security vulnerabilities on 20+ programming languages.                                             |
 
 ## About
 

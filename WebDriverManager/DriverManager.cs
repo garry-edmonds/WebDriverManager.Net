@@ -15,7 +15,7 @@ namespace WebDriverManager
 
         private IBinaryService _binaryService;
         private readonly IVariableService _variableService;
-        private readonly string _downloadDirectory = Directory.GetCurrentDirectory();
+        private string _downloadDirectory = Directory.GetCurrentDirectory();
 
         public DriverManager()
         {
@@ -36,10 +36,7 @@ namespace WebDriverManager
 
         public DriverManager WithProxy(IWebProxy proxy)
         {
-            lock (Object)
-            {
-                _binaryService = new BinaryService {Proxy = proxy};
-            }
+            _binaryService = new BinaryService {Proxy = proxy};
             ChromeForTestingClient.Proxy = proxy;
             WebRequest.DefaultWebProxy = proxy;
             return this;
